@@ -1,0 +1,188 @@
+#include <stdio.h>
+
+int main()
+{
+  char str[50];
+  int ch;
+  int score=0;
+  
+ printf("Enter your name: ");
+  scanf("%s", str);
+  
+  printf("------------------------------------------------------------------------------\n");
+  printf("Every correct answer merrits 1 point.\n");
+  printf("If you answered incorrectly, it will automatically moved to the next question.\n");
+  printf("Please be guided with the instructions.\n");  
+  printf("------------------------------------------------------------------------------\n");
+  
+  printf("1/10: True or False.\nWasting less food is a way to reduce greenhouse gas emissions\n");
+  printf("1 - True, 2 - False\n");
+   scanf("%d", &ch);
+   
+   if(ch==1)
+   {
+       printf("Correct. Moving on to the next question.\n");
+       score=score+1;
+   }
+   else
+   {
+       printf("Incorrect answer. Next question.\n");
+       score=score;
+   }
+   
+  printf("2/10: Which of the following is a greenhouse gas?\n");
+  printf("1 - CO2, 2 - CH4, 3 - Water Vapor, 4 - All of the Above\n");
+   scanf("%d", &ch);
+   
+   if(ch==1)
+   {
+       printf("Correct. Moving on to the next question.\n");
+       score=score+1;
+   }
+   else
+   {
+       printf("Incorrect answer. Next question.\n");
+       score=score;
+   }
+  printf("3/10: What is the greenhouse effect?\n");
+  printf("1 - The name of climate change legislation that was passed by the Congress.\n");
+  printf("2 - When you paint your house green to become an environmentalist.\n");  
+  printf("3 - When the gases in the atmosphere trap heat and block it from escaping our planet.\n"); 
+   scanf("%d", &ch);
+   
+   if(ch==3)
+   {
+       printf("Correct. Moving on to the next question.\n");
+       score=score+1;
+   }
+   else
+   {
+       printf("Incorrect answer. Next question.\n");
+       score=score;
+   }
+  printf("4/10: Which of the following are consequences associated with climate change?\n");
+  printf("1 - The ice sheets are declining, glaciers are in retreat globally, and our oceans are more acidic than ever.\n");
+  printf("2 - Surface temperatures are setting new heat records about each year.\n");
+  printf("3 - More extreme weather like droughts, heat waves and hurricanes.\n");
+  printf("4 - All of the above.\n");
+   scanf("%d", &ch);
+   
+   if(ch==4)
+   {
+       printf("Correct. Moving on to the next question.\n");
+       score=score+1;
+   }
+   else
+   {
+       printf("Incorrect answer. Next question.\n");
+       score=score;
+   }
+  printf("5/10: What can you do to help fight climate change?\n");
+  printf("1 - Divest from fossil fuel companies.\n");
+  printf("2 - Engage yourself in the science behind climate change.\n");
+  printf("3 - Vote for political candidates who will advocate for climate-related legislation and policy improvements.\n");
+  printf("4 - All of the above.\n");
+   scanf("%d", &ch);
+   
+   if(ch==4)
+   {
+       printf("Correct. Moving on to the next question.\n");
+       score=score+1;
+   }
+   else
+   {
+       printf("Incorrect answer. Next question.\n");
+       score=score;
+   }
+
+  printf("6/10: True or False.\nThe overwhelming majority of scientists agree that climate change is real and caused by humans.\n");
+  printf("1 - True, 2 - False\n");
+   scanf("%d", &ch);
+   
+   if(ch==1)
+   {
+       printf("Correct. Moving on to the next question.\n");
+       score=score+1;
+   }
+   else
+   {
+       printf("Incorrect answer. Next question.\n");
+       score=score;
+   }   
+
+  printf("7/10: What was agreed to in the Paris agreement that came out of COP-21, held in Paris in 2015\n");
+  printf("1 - To protect the biodiversity and end the deforestation of the world's rainforests.\n");
+  printf("2 - To keep global temperature rise well below 2 pre-industrial levels and to pursue a path to limit warning to 1.5c\n");
+  printf("3 - To pursue a goal of 100 percent clean, renewable energy.\n");
+  printf("4 - All of the above.\n");
+   scanf("%d", &ch);
+   
+   if(ch==2)
+   {
+       printf("Correct. Moving on to the next question.\n");
+       score=score+1;
+   }
+   else
+   {
+       printf("Incorrect answer. Next question.\n");
+       score=score;
+   }
+
+  printf("8/10: Which of these countries emits the most carbon dioxide?\n");
+  printf("1 - China\n");
+  printf("2 - USA\n");
+  printf("3 - UK\n");
+  printf("4 - Russia\n");
+   scanf("%d", &ch);
+   
+   if(ch==1)
+   {
+       printf("Correct. Moving on to the next question.\n");
+       score=score+1;
+   }
+   else
+   {
+       printf("Incorrect answer. Next question.\n");
+       score=score;
+   }
+
+  printf("9/10: What percentage of the global greenhouse gas emissions does the transportation sector emit?\n");
+  printf("1 - 1 percent\n");
+  printf("2 - 14 percent\n");
+  printf("3 - 33 percent\n");
+  printf("4 - 70 percent\n");
+   scanf("%d", &ch);
+   
+   if(ch==2)
+   {
+       printf("Correct. Moving on to the next question.\n");
+       score=score+1;
+   }
+   else
+   {
+       printf("Incorrect answer. Next question.\n");
+       score=score;
+   }
+   
+  printf("10/10: Globally, which of the following economic sectors emits the largest percentage of greenhouse gas emissions?\n");
+  printf("1 - Buildings\n");
+  printf("2 - Industry\n");
+  printf("3 - Transportation\n");
+  printf("4 - Electricity and heat production\n");
+   scanf("%d", &ch);
+   
+   if(ch==4)
+   {
+       printf("Correct. Moving on to the next question.\n");
+       score=score+1;
+   }
+   else
+   {
+       printf("Incorrect answer. Next question.\n");
+       score=score;
+   }
+   
+printf("Total score: %d", score);
+printf("\nThank you for taking the test.");
+   
+}
